@@ -10,10 +10,14 @@ function App() {
     setDoces([...doces, novoDoce])
   }
 
+  function excluirDoce(id) {
+    setDoces(doces.filter((doce) => doce.id !== id))
+  }
+
   return (
     <div>
       <h1>Doceria</h1>
-      <ListaDoces doces={doces} />
+      <ListaDoces doces={doces} aoExcluir={excluirDoce} />
       <FormDoce aoAdicionar={adicionarDoce} />
     </div>
   )

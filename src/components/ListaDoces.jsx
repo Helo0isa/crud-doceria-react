@@ -1,4 +1,4 @@
-function ListaDoces({ doces }) {
+function ListaDoces({ doces, aoExcluir }) {
   return (
     <table border="1" cellPadding="8">
       <thead>
@@ -7,6 +7,7 @@ function ListaDoces({ doces }) {
           <th>Sabor</th>
           <th>Preço</th>
           <th>Quantidade</th>
+          <th>Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -16,6 +17,9 @@ function ListaDoces({ doces }) {
             <td>{doce.sabor}</td>
             <td>R$ {doce.preco.toFixed(2)}</td>
             <td>{doce.quantidade}</td>
+            <td>
+                <button onClick={() => aoExcluir(doce.id)}>Excluir</button>
+            </td>
           </tr>
         ))}
       </tbody>
