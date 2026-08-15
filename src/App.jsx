@@ -5,6 +5,7 @@ import FormDoce from './components/FormDoce.jsx'
 
 function App() {
   const [doces, setDoces] = useState(docesIniciais)
+  const [doceEmEdicao, setDoceEmEdicao] = useState(null)
 
   function adicionarDoce(novoDoce) {
     setDoces([...doces, novoDoce])
@@ -14,11 +15,22 @@ function App() {
     setDoces(doces.filter((doce) => doce.id !== id))
   }
 
+  function iniciarEdicao(doce) {
+    setDoceEmEdicao(doce)
+  }
+
+  function atualizarDoce(doceAtualizado) {
+    setDoces(doces.map((doce) =>
+      doce.id === doceAtualizado.id ? doceAtualizado : doce
+    ))
+    setDoceEmEdicao(null)
+  }
+
   return (
     <div>
       <h1>Doceria</h1>
-      <ListaDoces doces={doces} aoExcluir={excluirDoce} />
-      <FormDoce aoAdicionar={adicionarDoce} />
+      <ListaDoces doces={doces} aoExcluir={excluirDoce} aoEditar={iniciarEdicao}/>
+      <FormDoce aoAdicionar={adicionarDoce} doceEmEdicao={doceEmEdicao} aoAtualizar={atualizarDoce}/>
     </div>
   )
 }

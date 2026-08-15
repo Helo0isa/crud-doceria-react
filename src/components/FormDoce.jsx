@@ -1,24 +1,42 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-function FormDoce({aoAdicionar}) {
+function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar}) {
   const [nome, setNome] = useState('')
   const [sabor, setSabor] = useState('')
   const [preco, setPreco] = useState('')
   const [quantidade, setQuantidade] = useState('')
 
+  useEffect(() => {
+    if (doceEmEdicao) {
+      setNome(doceEmEdicao.nome)
+      setSabor(doceEmEdicao.sabor)
+      setPreco(doceEmEdicao.preco)
+      setQuantidade(doceEmEdicao.quantidade)
+    }
+  }, [doceEmEdicao])
+
   function handleSubmit(e) {
     e.preventDefault()
 
-    const novoDoce = {
-        id: Date.now(),
-        nome: nome,
-        sabor: sabor,
-        preco: Number(preco),
-        quantidade: Number(quantidade)
-
+    const doce = {
+      id: doceEmEdicao ? doceEmEdicao.id : Date.now(),
+      nome: nome,
+      sabor: sabor,
+      preco: Number(preco),
+      quantidade: Number(quantidade)
     }
 
-    aoAdicionar(novoDoce)
+    if (doceEmEdicao) {
+      aoAtualizar(doce)
+    } 
+    else {
+      aoAdicionar(doce)
+    }
+
+    setNome('')
+    setSabor('')
+    setPreco('')
+    setQuantidade('')
   }
 
 
