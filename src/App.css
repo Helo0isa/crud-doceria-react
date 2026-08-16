@@ -6,6 +6,13 @@
   --bege: #EAD9C7;
 }
 
+#root {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -103,4 +110,62 @@ h1 {
 .btn-excluir {
   background-color: var(--rosa);
   color: white;
+}
+
+.form-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px 24px;
+  box-shadow: 0px 3px 10px rgba(74, 46, 34, 0.12);
+  max-width: 500px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+.form-card h2 {
+  font-family: 'Baloo 2', sans-serif;
+  color: var(--marrom);
+  margin: 0 0 16px;
+}
+
+.form-doce {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-doce input {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--bege);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+.form-botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-salvar {
+  background-color: var(--rosa);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-cancelar {
+  background-color: var(--bege);
+  color: var(--marrom);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
 }
