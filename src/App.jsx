@@ -2,6 +2,7 @@ import { useState } from 'react'
 import docesIniciais from './data/doces.json'
 import ListaDoces from './components/ListaDoces.jsx'
 import FormDoce from './components/FormDoce.jsx'
+import './App.css'
 
 function App() {
   const [doces, setDoces] = useState(docesIniciais)
