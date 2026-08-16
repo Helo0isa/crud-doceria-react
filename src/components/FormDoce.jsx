@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar}) {
+function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar, aoCancelar}) {
   const [nome, setNome] = useState('')
   const [sabor, setSabor] = useState('')
   const [preco, setPreco] = useState('')
@@ -39,6 +39,13 @@ function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar}) {
     setQuantidade('')
   }
 
+  function handleCancelar() {
+    aoCancelar()
+    setNome('')
+    setSabor('')
+    setPreco('')
+    setQuantidade('')
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -70,7 +77,11 @@ function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar}) {
           onChange={(e) => setQuantidade(e.target.value)}
         />
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit">{doceEmEdicao ? 'Salvar' : 'Cadastrar'}</button>
+
+        {doceEmEdicao && (
+          <button type="button" onClick={aoCancelar}>Cancelar</button>
+        )}
     </form>
   )
 }
