@@ -80,7 +80,7 @@ function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar, aoCancelar}) {
         <button type="submit">{doceEmEdicao ? 'Salvar' : 'Cadastrar'}</button>
 
         {doceEmEdicao && (
-          <button type="button" onClick={aoCancelar}>Cancelar</button>
+          <button type="button" onClick={handleCancelar}>Cancelar</button>
         )}
     </form>
   )
