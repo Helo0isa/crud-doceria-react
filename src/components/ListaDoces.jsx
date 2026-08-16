@@ -8,42 +8,36 @@ function ListaDoces({ doces, aoExcluir, aoEditar }) {
   );
 
   return (
-    <div>
+    <div className="lista-container">
       <input
+        className="input-busca"
         type="text"
-        placeholder="Buscar por nome"
+        placeholder="Buscar por nome..."
         value={busca}
         onChange={(e) => setBusca(e.target.value)}
       />
 
-      <table border="1" cellPadding="8">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Sabor</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          {docesFiltrados.map((doce) => (
-            <tr key={doce.id}>
-              <td>{doce.nome}</td>
-              <td>{doce.sabor}</td>
-              <td>R$ {doce.preco.toFixed(2)}</td>
-              <td>{doce.quantidade}</td>
-              <td>
-                <button onClick={() => aoEditar(doce)}>Editar</button>
-                <button onClick={() => aoExcluir(doce.id)}>Excluir</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="doces-lista">
+        {docesFiltrados.map((doce) => (
+          <div className="doce-card" key={doce.id}>
+            <span className="doce-emoji">🍬</span>
+
+            <div className="doce-info">
+              <span className="doce-nome">{doce.nome}</span>
+              <span className="doce-sabor">Sabor: {doce.sabor}</span>
+              <span className="pilula">Preço: R$ {doce.preco.toFixed(2)}</span>
+              <span className="pilula">Quantidade: {doce.quantidade}</span>
+            </div>
+
+            <div className="doce-acoes">
+              <button className="btn-editar" onClick={() => aoEditar(doce)}>Editar</button>
+              <button className="btn-excluir" onClick={() => aoExcluir(doce.id)}>Excluir</button>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
-
 
 export default ListaDoces;
