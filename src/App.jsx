@@ -34,9 +34,9 @@ function App() {
   return (
     <div>
       <h1>Doceria</h1>
-      <ListaDoces doces={doces} aoExcluir={excluirDoce} aoEditar={iniciarEdicao}/>
       <FormDoce aoAdicionar={adicionarDoce} doceEmEdicao={doceEmEdicao} aoAtualizar={atualizarDoce} aoCancelar={cancelarEdicao}/>
-    </div>
+      <ListaDoces doces={doces} aoExcluir={excluirDoce} aoEditar={iniciarEdicao}/>
+    </div>  
   )
 }
 

@@ -48,41 +48,46 @@ function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar, aoCancelar}) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-        <input //Nome do doce
+    <div className="form-card">
+      <h2>{doceEmEdicao ? 'Editar Doce' : 'Novo Doce'}</h2>
+
+      <form className="form-doce" onSubmit={handleSubmit}>
+        <input
           type="text"
           placeholder="Nome"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
         />
-      
-        <input //Sabor do doce
+
+        <input
           type="text"
           placeholder="Sabor"
           value={sabor}
           onChange={(e) => setSabor(e.target.value)}
         />
-      
-        <input //Preço do doce
+
+        <input
           type="number"
           placeholder="Preço"
           value={preco}
           onChange={(e) => setPreco(e.target.value)}
         />
-    
-        <input //Quantidade do doce
+
+        <input
           type="number"
           placeholder="Quantidade"
           value={quantidade}
           onChange={(e) => setQuantidade(e.target.value)}
         />
 
-        <button type="submit">{doceEmEdicao ? 'Salvar' : 'Cadastrar'}</button>
-
-        {doceEmEdicao && (
-          <button type="button" onClick={handleCancelar}>Cancelar</button>
-        )}
-    </form>
+        <div className="form-botoes">
+          <button type="submit" className="btn-salvar">{doceEmEdicao ? 'Salvar' : 'Cadastrar'}</button>
+          {doceEmEdicao && (
+            <button type="button" className="btn-cancelar" onClick={handleCancelar}>Cancelar</button>
+          )}
+        </div>
+      </form>
+    </div>
   )
 }
 
