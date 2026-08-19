@@ -23,10 +23,14 @@ function ListaDoces({ doces, aoExcluir, aoEditar }) {
             <span className="doce-emoji">🍬</span>
 
             <div className="doce-info">
-              <span className="doce-nome">{doce.nome}</span>
-              <span className="doce-sabor">Sabor: {doce.sabor}</span>
-              <span className="pilula">Preço: R$ {doce.preco.toFixed(2)}</span>
-              <span className="pilula">Quantidade: {doce.quantidade}</span>
+              <div className="doce-linha">
+                <span className="doce-nome">{doce.nome}</span>
+                <span className="doce-sabor">Sabor: {doce.sabor}</span>
+              </div>
+              <div className="doce-linha">
+                <span className="pilula">Preço: R$ {doce.preco.toFixed(2)}</span>
+                <span className="pilula">Quantidade: {doce.quantidade}</span>
+              </div>
             </div>
 
             <div className="doce-acoes">
@@ -40,4 +44,4 @@ function ListaDoces({ doces, aoExcluir, aoEditar }) {
   )
 }
 
-export default ListaDoces;
+export default ListaDoces;  
