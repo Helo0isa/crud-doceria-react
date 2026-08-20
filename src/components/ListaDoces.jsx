@@ -30,9 +30,12 @@ function ListaDoces({ doces, aoExcluir, aoEditar }) {
           <div className="doce-card" key={doce.id}>
             <img src={balinhas} alt="Doce" className="doce-imagem" />
 
-            <div className="doce-info">
+            <div className="doce-nome-sabor">
               <span className="doce-nome">{doce.nome}</span>
               <span className="doce-sabor">Sabor: {doce.sabor}</span>
+            </div>
+            
+            <div className="doce-valores">
               <span className="pilula">Preço: R$ {doce.preco.toFixed(2)}</span>
               <span className="pilula">Quantidade: {doce.quantidade}</span>
             </div>
