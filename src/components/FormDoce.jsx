@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import adicionar from '../assets/icons/adicionar.png'
+import lapis from '../assets/icons/lapis.png'
 
 function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar, aoCancelar}) {
   const [nome, setNome] = useState('')
@@ -81,7 +83,10 @@ function FormDoce({aoAdicionar, doceEmEdicao, aoAtualizar, aoCancelar}) {
         />
 
         <div className="form-botoes">
-          <button type="submit" className="btn-salvar">{doceEmEdicao ? 'Salvar' : 'Cadastrar'}</button>
+          <button type="submit" className="btn-salvar">
+            <img src={doceEmEdicao ? lapis : adicionar} alt="" className="btn-icon-inline" />
+            {doceEmEdicao ? 'Salvar' : 'Cadastrar'}
+          </button>
           {doceEmEdicao && (
             <button type="button" className="btn-cancelar" onClick={handleCancelar}>Cancelar</button>
           )}
