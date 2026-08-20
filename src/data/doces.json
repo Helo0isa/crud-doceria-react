@@ -5,19 +5,5 @@
     "sabor": "Chocolate",
     "preco": 3.50,
     "quantidade": 20
-  },
-  {
-    "id": 2,
-    "nome": "Beijinho",
-    "sabor": "Coco",
-    "preco": 3.50,
-    "quantidade": 15
-  },
-  {
-    "id": 3,
-    "nome": "Bem-casado",
-    "sabor": "Baunilha",
-    "preco": 5.00,
-    "quantidade": 10
   }
 ]

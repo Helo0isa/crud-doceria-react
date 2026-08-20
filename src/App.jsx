@@ -2,6 +2,7 @@ import { useState } from 'react'
 import docesIniciais from './data/doces.json'
 import ListaDoces from './components/ListaDoces.jsx'
 import FormDoce from './components/FormDoce.jsx'
+import divisor from './assets/icons/divisorvermelho.png'
 import './App.css'
 
 function App() {
@@ -35,11 +36,10 @@ function App() {
     <div>
       <h1>Doceria</h1>
       <FormDoce aoAdicionar={adicionarDoce} doceEmEdicao={doceEmEdicao} aoAtualizar={atualizarDoce} aoCancelar={cancelarEdicao}/>
+      <img src={divisor} alt="" className="divisor" />
       <ListaDoces doces={doces} aoExcluir={excluirDoce} aoEditar={iniciarEdicao}/>
     </div>  
   )
 }
-
-
 
 export default App
