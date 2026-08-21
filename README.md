@@ -1,12 +1,14 @@
-# 🍬 Doceria - CRUD em React
+﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵
+# Doceria - CRUD em React
 
 Aplicação de CRUD (Cadastrar, Listar, Editar e Excluir) desenvolvida como atividade avaliativa da disciplina de Técnicas Avançadas de Programação Web e Mobile, do curso de Análise e Desenvolvimento de Sistemas.
 
-## 📋 Sobre o projeto
+
+## <img src="./src/assets/icons/cookie.png" width="42" height="42" style="vertical-align: middle;" /> Sobre o projeto
 
 O sistema simula o gerenciamento de doces de uma doceria, permitindo cadastrar novos doces, visualizar os já cadastrados, editar suas informações e excluí-los, tudo manipulado apenas em memória durante a execução da aplicação, sem uso de banco de dados ou API externa.
 
-## ✨ Funcionalidades
+## <img src="./src/assets/icons/milkshake.png" width="52" height="52" style="vertical-align: middle;" /> Funcionalidades
 
 - ✅ Listagem dos doces cadastrados
 - ✅ Cadastro de novos doces
@@ -14,14 +16,14 @@ O sistema simula o gerenciamento de doces de uma doceria, permitindo cadastrar n
 - ✅ Exclusão de doces
 - ✅ Busca por nome (funcionalidade bônus)
 
-## 🛠️ Tecnologias utilizadas
+## <img src="./src/assets/icons/chocolate.png" width="52" height="52" style="vertical-align: middle;" /> Tecnologias utilizadas
 
 - [React](https://react.dev/)
 - [Vite](https://vite.dev/)
 - JavaScript (ES6+)
-- CSS puro
+- CSS
 
-## 📁 Estrutura do projeto
+## <img src="./src/assets/icons/bolinhomorango.png" width="52" height="52" style="vertical-align: middle;" /> Estrutura do projeto
 
 ```bash
 src/
@@ -36,7 +38,7 @@ src/
 └── main.jsx
 ```
 
-## 🚀 Como executar o projeto
+## <img src="./src/assets/icons/candycane.png" width="42" height="42" style="vertical-align: middle;" /> Como executar o projeto
 
 Pré-requisito: ter o [Node.js](https://nodejs.org/) instalado.
 
@@ -56,7 +58,7 @@ npm run dev
 
 Depois disso, acesse o endereço mostrado no terminal.
 
-## 👥 Autores
+## <img src="./src/assets/icons/chapeu.png" width="48" height="48" style="vertical-align: middle;" /> Desenvolvedores
 
 - Heloisa Avelino Mazon
 - Filipe Henrique Ricci
@@ -70,3 +72,5 @@ Depois disso, acesse o endereço mostrado no terminal.
 **Disciplina:** Técnicas Avançadas de Programação Web e Mobile
 
 **Professor:** Ederaldo Ratz
+
+﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ ๑ ⊹﹒︵﹒˚ ₊ ︵﹒⊹ ๑ ︵︵ 
