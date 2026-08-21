@@ -16,14 +16,14 @@ O sistema simula o gerenciamento de doces de uma doceria, permitindo cadastrar n
 - ✅ Exclusão de doces
 - ✅ Busca por nome (funcionalidade bônus)
 
-## <img src="./src/assets/icons/chocolate.png" width="52" height="52" style="vertical-align: middle;" /> Tecnologias utilizadas
+## <img src="./src/assets/icons/chocolate.png" width="52" height="52" style="vertical-align: text-bottom;" /> Tecnologias utilizadas
 
 - [React](https://react.dev/)
 - [Vite](https://vite.dev/)
 - JavaScript (ES6+)
 - CSS
 
-## <img src="./src/assets/icons/bolinhomorango.png" width="52" height="52" style="vertical-align: middle;" /> Estrutura do projeto
+## <img src="./src/assets/icons/bolinhomorango.png" width="52" height="52" style="vertical-align: text-bottom;" /> Estrutura do projeto
 
 ```bash
 src/
