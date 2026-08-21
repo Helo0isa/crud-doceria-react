@@ -58,7 +58,7 @@ npm run dev
 
 Depois disso, acesse o endereço mostrado no terminal.
 
-## <img src="./src/assets/icons/chapeu.png" width="48" height="48" style="vertical-align: middle;" /> Desenvolvedores
+## <img src="./src/assets/icons/chapeu.png" width="48" height="48" style="vertical-align: middle;" /> Integrantes
 
 - Heloisa Avelino Mazon
 - Filipe Henrique Ricci
